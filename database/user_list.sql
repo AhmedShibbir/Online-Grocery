@@ -1,0 +1,1 @@
+CREATE TABLE user_list ( name  VARCHAR(30) PRIMARY KEY , email VARCHAR(30) , mobile VARCHAR(20) , password VARCHAR(16));

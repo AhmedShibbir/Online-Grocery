@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="640.0" minWidth="1024.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #92F22A;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShoppingPageController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1030.0" focusTraversable="true" opacity="0.69">
+         <image>
+            <Image url="@media/food-market-vegetable.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="362.0" layoutY="21.0" prefHeight="49.0" prefWidth="332.0" text="Welcome To The Shop" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="74.0" prefHeight="25.0" prefWidth="167.0" text="Grocery at your home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" contentDisplay="TOP" layoutX="955.0" layoutY="7.0" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="37.0" prefWidth="60.0" style="-fx-background-color: #2c3e50;" text="Log Out" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/lo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox layoutX="51.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="55.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="  Category 1" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Rice">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/grain-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Oil">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/12956860041862771915vegetable-oil-vitamin-e-lg-md.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Onion">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/onion%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Garlic">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/garlic.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Salt">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/salt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="162.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="    Amount" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="riceAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="oilAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="onionAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="garlicAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="saltAmount" prefHeight="67.0" prefWidth="92.0" />
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="145.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <VBox layoutX="273.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="55.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text=" Category 2" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Apple">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/apple.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Banana">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/bananas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Mango">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/mango.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Grape">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/razz-berry.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Avocado">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/avocado.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="256.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="359.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <VBox layoutX="376.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="  Amount" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="appleAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="bannaAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="mangoAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="grapeAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="avocadoAmount" prefHeight="67.0" prefWidth="92.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="595.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="  Amount" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="tomatoAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="brinjalAamount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="cucumberAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="carrotAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="calabashAmount" prefHeight="67.0" prefWidth="92.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="814.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="   Amount" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="pawnAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="beefAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="fishAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="chickenAmount" prefHeight="60.0" prefWidth="95.0" />
+            <ComboBox fx:id="lambAmount" prefHeight="67.0" prefWidth="92.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="481.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="55.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="  Category 3" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Tomato">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/tomato.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Brinjal">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/aubergine.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Cucumber">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/cucumber.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Carrot">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/381051.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Calabash">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/381025.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="703.0" layoutY="181.0" prefHeight="355.0" prefWidth="94.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label prefHeight="55.0" prefWidth="94.0" style="-fx-background-color: #2c3e50;" text="  Category 1" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Pawn">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/prawn-pickle-med.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Beef">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/cow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Fish">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/450087.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Chicken">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/chicken.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label prefHeight="72.0" prefWidth="136.0" text="Lamb">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/lamb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="470.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="578.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="686.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="355.0" layoutX="797.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+      <Button fx:id="checkoutButton" contentDisplay="TOP" layoutX="861.0" layoutY="545.0" mnemonicParsing="false" onAction="#checkoutButtonAction" prefHeight="78.0" prefWidth="158.0" style="-fx-background-color: #2c3e50;" text="CheckOut" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/fmcg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
